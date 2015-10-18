@@ -56,7 +56,10 @@ public class CZ4031 {
                 System.out.println("Error in CSV FileWriter!");
             }
         } catch (ParserConfigurationException | SAXException | IOException e) {
+            System.out.println(e.getMessage());
             System.out.println("Parse exception!");
+            System.out.println("Please make sure that dblp.xml and dblp.dtd is "
+                    + "placed in the project's root folder");
         }
     }
 }
